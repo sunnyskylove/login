@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop-alert</title>
+
+    <style>
+        body {
+            width: 440px; /* 원하는 가로 크기로 설정 */
+            margin: 0 auto; /* 페이지를 수평 가운데 정렬 */
+            background-color: rgb(148, 148, 148);
+            
+        }
+    
+        .layer {
+            width: 100%; /* 가로 너비를 부모 요소인 body의 너비와 동일하게 설정 */
+            /* 다른 요소들의 스타일을 필요에 따라 설정합니다. */
+            height: 2400px;
+            background-color: white;
+        }
+
+        .blueline {
+            width: 440px;;
+            height: 45px;
+            font-size: 17px;
+            text-align: center;
+            line-height: 3;
+            margin-right: 10px;
+            
+            background-color: #2A5383;
+            font-family: alike;
+            color: white;
+            
+        }
+
+        #info {
+            font-size: 19px;
+            font-family: Rockwell Extra Bold;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        #ft {
+            margin-left: 8px;
+            font-size: 15;
+            color: 787878;
+        }
+      
+
+        .register {
+            width: 100px;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+            border-style: 10px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4); /* 테두리 아래에 음영 추가 */
+            background-clip: border-box;
+            line-height: 0.5;
+        }
+
+        .register2 {
+            width: 300px;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+            border-style: 10px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4); /* 테두리 아래에 음영 추가 */
+            background-clip: border-box;
+            line-height: 0.5;
+        }
+        .register3 {
+            width: 350px;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+            border-style: 10px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4); /* 테두리 아래에 음영 추가 */
+            background-clip: border-box;
+            line-height: 0.5;
+
+        }
+
+        .btn {
+            margin-left: 70px;
+            width: 300px;
+            height: 30px;
+            background-color: #2484F4;
+            border-color: #2484F4;
+            border-radius: 5px;
+            
+            color: white;
+
+        }
+
+        .overlay {
+  display: flex;
+  justify-content: center; /* 가로 방향 가운데 정렬 */
+  align-items: center; /* 세로 방향 가운데 정렬 */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 배경 오버레이 색상 */
+}
+
+        .notification {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+    #continue {
+        color: #777676;
+        font-family: Inter;
+        text-align: right;
+
+    }
+
+    #stop {
+        color: #2484F4;
+        font-family: Inter;
+        text-align: right;
+
+
+
+    }
+
+
+    
+        a {
+            text-decoration: none;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    
+    <div class="layer">
+        <div class="blueline">
+            <border>facebook 가입하기</border>
+        </div>
+        
+        <p id="info">회원정보 입력</p>
+
+        <form action="register">
+        <label id="ft">아이디</label> <input class="register3" type="text"><br><br>
+
+        <label id="ft">비밀번호</label>  <input class="register" type"password>
+        <label id="ft">비밀번호 재확인</label> <input class="register" type="password"><br><br>
+        <label id="ft">이메일 주소</label> <input class="register2" type="email" ><br><br>
+        <label id="ft">휴대폰 번호</label> <input class="register2" type="tel"><br><br>
+        
+        <a href="../03_register/03_sucess.html">
+         <button class="btn">다음</button>
+        </a>      
+    </form>
+
+    <div class="overlay">
+        <div class="notification">
+            
+            <span> <bold>계정 만들기를 중단하시겠어요?</bold><br> 지금 중단하면 진행된 내용이 모두 삭제됩니다. 
+                <br id="continue"> 계정 계속 만들기 
+                <a href="/01_login/01_login/01-1_log-in-page.html">
+                <br id="stop">계정 만들기 중단 </span></a>
+        
+    </div>
+</div>
+
+    </div>
+    </div>

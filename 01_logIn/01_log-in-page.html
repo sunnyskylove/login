@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
+    <title>main_log-in-page</title>
 
     <style>
         body {
@@ -35,9 +35,21 @@
             height: 200%;
             background-clip: border-box;
             line-height: 0.5;
-                        
+            
+            
         }
-       
+ 
+        /* .login-wrapper {
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            margin: 10%;
+            width: 100%;
+            height: 200%;
+            position: center;
+                    
+        } */
+        
+    
         input[type=text] {
             width: 350px;
             height: 40px;
@@ -76,10 +88,7 @@
         }
         .ppp {
             margin-top: 5px;
-            width: 350px;
-
             font-family: 'Roboto', sans-serif;
-            
         }
         .pwd {
             text-align: center;
@@ -98,7 +107,7 @@
         color: gray;
         line-height: -100;
      }
-        .bar {
+       .bar {
          flex: auto;
          border: none;
          height: 1px;
@@ -111,42 +120,47 @@
              
      }
         
-        .layer{
+      .layer{
         background-color: #ffffff;
      }
 
-      
 
-        #btn {
-        background-color: #2484F4;
-        color: white;
+     #btn {
+        background-color: white;
         font-size: 15px;
         font-family: 'Roboto', sans-serif;
-        text-align: center;
         width: 350px;
         height: 40px;
         border-radius: 5px;
         border: 1px solid lightgray;
-       
-    }
-
-    #btn2 {
-        background-color: #2484F4;
-        color: white;
-        font-size: 15px;
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-        width: 350px;
-        height: 40px;
-        border-radius: 5px;
-        border: 1px solid lightgray;
+        padding-left: 22px;
         margin-left: 20px;
+     
     }
 
-       
-        a {
-            text-decoration: none;
-        }
+
+    .overlay {
+  display: flex;
+  justify-content: center; /* 가로 방향 가운데 정렬 */
+  align-items: center; /* 세로 방향 가운데 정렬 */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 배경 오버레이 색상 */
+}
+
+.notification {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+    a {
+        text-decoration: none;
+    }
 
     </style>
 
@@ -155,7 +169,6 @@
 <body>
     
     <div class="layer">
-        <!-- Main content goes here -->
 
         <div class="fb"> 
             <h1><b>facebook</b></h1> 
@@ -165,16 +178,13 @@
             <div class="box">    
                 <input type="text" name="userName" placeholder="휴대폰번호 또는 이메일 주소"><br><br>
                 <input type="password" name="userPassword" placeholder="비밀번호"><br><br>
-
-            <a href="01-1_log-in-success.html">
-                <button id= "btn" type="submit"> 로그인 </button>
-            </a>
+                <a href="/01_login/01_login/01-1_log-in-sucess.html">
+                <input type="submit" value="로그인"></a>    
             </div>
-            
-            <a href="../02_find/01_mobile.html">
-                <div class="ppp">
-                    <h3 class="pwd">비밀번호를 잊으셨나요?</h3>     
-            </a><br>
+            <div class="ppp">
+                <a href="../02_find/01_mobile.html">
+                    <h3 class="pwd">비밀번호를 잊으셨나요?</h3></a>
+                <br>
         
                 <div class="wrap2">
                     <hr class="bar">
@@ -184,16 +194,21 @@
             <br>
            </div>         
 
-        <a href="../03_register/01_join.html">
+           
             <div class="button">
-                <button id="btn2">새 계정만들기</button>
-            </a></div>
-        
-
- 
-            
+                <a href="../03_register/01_join.html">
+                <button id="btn">새 계정만들기</button></a>
+            </div>
+                    
             </div>
         </div>
-    </div>
+    
     
 
+
+
+    
+
+
+</body>
+</html>
